@@ -2,10 +2,11 @@ import { Message } from "discord.js"
 import { TeamsParser } from "./teams_parser"
 
 const { Client, Intents } = require('discord.js')
+const config = require('./config.json');
+
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] })
 
 const command_prefix = '.'
-
 const command_hello = `${command_prefix}hello`
 const command_hello_jarvis = 'jarvis'
 const command_hello_reply_world = 'world!'
@@ -73,4 +74,4 @@ function isTeams(message: Message) : boolean {
     return message.content.toLowerCase().startsWith(command_prefix + command_teams)
 }
 
-client.login('OTQ5NzA2NDgzOTUwNTc1Njk2.YiORFg.hCGExfCn_vYwIRTOUZgClhtc6q0')
+client.login(config.token)
