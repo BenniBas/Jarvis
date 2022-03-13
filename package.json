@@ -1,0 +1,23 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "Small Discord bot for all sorts of uses",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "Benjamin Basmaci",
+  "license": "ISC",
+  "dependencies": {
+    "commonjs": "^0.0.1",
+    "discord.js": "^13.6.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2"
+  }
+}
